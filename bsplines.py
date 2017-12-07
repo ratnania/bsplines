@@ -86,18 +86,3 @@ class CardinalBspline(UniformBspline):
         """
         N = p + 1
         UniformBspline.__init__(self, p, N)
-
-##########################################
-if __name__ == "__main__":
-
-    # ...
-    def test_1(n_elements=5, p=2):
-        T    = make_knots(n_elements,p,kind="open")
-        Bspl = Bspline(T,p)
-
-        Bspl.plot()
-        plt.show()
-    # ...
-
-    test_1()
-
